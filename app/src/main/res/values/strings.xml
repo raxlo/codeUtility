@@ -9,4 +9,12 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="code_name">
+        <item>px dp converter</item>
+    </string-array>
+
+    <string-array name="code_description">
+        <item>convert pixel/dp to dp/pixel</item>
+    </string-array>
 </resources>

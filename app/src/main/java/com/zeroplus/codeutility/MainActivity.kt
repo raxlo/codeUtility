@@ -1,20 +1,23 @@
 package com.zeroplus.codeutility
 
+
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
 import com.zeroplus.codeutility.databinding.ActivityMainBinding
+import com.zeroplus.codeutility.utility.pxdpconverter.CustomPxDpDialog
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
+    var codeSelectID = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,18 +25,55 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val code_description = resources.getStringArray(R.array.code_description)
+/*
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.code_name,
+            R.layout.cunsom_spinner_item
+        ).also { adapter ->
+
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+            binding.spinner.adapter=adapter
+        }*/
+
+
+
+        val adapter = ArrayAdapter.createFromResource(this, R.array.code_name, android.R.layout.simple_spinner_dropdown_item)
+        binding.spinner.adapter = adapter
+
+        binding.spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener{
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                codeSelectID = position
+                binding.textView.text = code_description[codeSelectID]
+            }
+        }
+
+        binding.button.setOnClickListener {
+            when (codeSelectID) {
+                0 -> { CustomPxDpDialog().show(supportFragmentManager, "customPxDpDialog")}
+
+            }
+        }
+/*
         setSupportActionBar(binding.toolbar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
+
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+        */
     }
 
+    /*
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -55,4 +95,5 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+    */
 }
