@@ -23,20 +23,11 @@ class CustomPxDpDialog : DialogFragment(){
 
      lateinit var context : Activity
 
-    var dptopxBtton : Button? = null
-    var dptopxInput: EditText? = null
-    var dptopxText: TextView? = null
-    var pxtodpButton : Button? = null
-    var pxtodpInput: EditText? = null
-    var pxtodpText: TextView? = null
-    var closeImage : ImageView? = null
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         getDialog()!!.getWindow()?.setBackgroundDrawableResource(R.drawable.round_corner);
 
-        //binding =  PxdpdialogBinding.inflate(inflater, container, false)
         binding =  PxdpdialogBinding.inflate(inflater, container, false)
-        return  binding!!.root//inflater.inflate(R.layout.pxdpdialog, container, false)
+        return  binding!!.root
     }
 
     override fun onStart() {
