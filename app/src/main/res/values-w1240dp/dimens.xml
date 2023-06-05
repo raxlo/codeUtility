@@ -1,3 +1,9 @@
 <resources>
     <dimen name="fab_margin">200dp</dimen>
+    //segmented
+    <dimen name="segmented_control_min_width">100dp</dimen>
+    <dimen name="segmented_control_min_height">40dp</dimen>
+    <dimen name="corner_radius">0dp</dimen>
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
 </resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:background="#7C4DFF"
+            android:gravity="center">
+            <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                android:id="@+id/segmented2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="1dp"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="#FFEB3B"
+                segmentedgroup:sc_unchecked_tint_color="#ff0000"
+                segmentedgroup:sc_checked_text_color="#7C4DFF">
+
+                <RadioButton
+                    android:id="@+id/button21"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="One"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/button22"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Two"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:gravity="center">
+            <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                android:id="@+id/segmented3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="1dp"
+                segmentedgroup:sc_corner_radius="5dp"
+                segmentedgroup:sc_tint_color="#009688">
+
+                <RadioButton
+                    android:id="@+id/button31"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/button32"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/button33"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:background="#ffffff"
+            android:gravity="center">
+            <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                android:id="@+id/segmented4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="1dp"
+                segmentedgroup:sc_corner_radius="5dp"
+                segmentedgroup:sc_tint_color="#F44336">
+
+            </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:background="#CDDC39"
+                android:gravity="center">
+                <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    segmentedgroup:sc_tint_color="#727272"
+                    segmentedgroup:sc_border_width="1dp"
+                    segmentedgroup:sc_corner_radius="10dp">
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="One"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Two"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="80dp"
+                android:background="#FF9800"
+                android:gravity="center">
+                <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    segmentedgroup:sc_tint_color="#ff33b5e5"
+                    segmentedgroup:sc_border_width="5dp"
+                    segmentedgroup:sc_corner_radius="7dp">
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="One"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Two"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Three"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+            </RelativeLayout>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ff33b5e5"
+            android:scrollbars="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup
+                    android:id="@+id/segmented5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    segmentedgroup:sc_tint_color="@android:color/white"
+                    segmentedgroup:sc_checked_text_color="#ff33b5e5">
+                </com.zeroplus.codeutility.utility.segmented.kotlin.SegmentedGroup>
+            </RelativeLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_segmented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/remove_segmented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView >
