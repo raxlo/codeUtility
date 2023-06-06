@@ -10,13 +10,26 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+    <string-array name="arr_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="arr_optionstag">
+        <item>LowTag</item>
+        <item>MediumTag</item>
+        <item>HighTag</item>
+    </string-array>
+
     <string-array name="code_name">
         <item>px dp converter</item>
         <item>Segmented Control</item>
+        <item>Step Seekbar Switch</item>
     </string-array>
 
     <string-array name="code_description">
         <item>convert pixel/dp to dp/pixel</item>
         <item>Segmented Control</item>
+        <item>Step Seekbar Switch</item>
     </string-array>
 </resources>

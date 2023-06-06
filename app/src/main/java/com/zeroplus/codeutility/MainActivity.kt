@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.zeroplus.codeutility.databinding.ActivityMainBinding
 import com.zeroplus.codeutility.utility.pxdpconverter.CustomPxDpDialog
+import com.zeroplus.codeutility.utility.seekbar.CustomSeekbarDialog
 import com.zeroplus.codeutility.utility.segmented.CustomSegmentedDialog
 import com.zeroplus.codeutility.utility.segmented.CustomSegmentedDialog2
 
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
             when (codeSelectID) {
                 0 -> { CustomPxDpDialog().show(supportFragmentManager, "customPxDpDialog")}
                 1 -> { CustomSegmentedDialog2().show(supportFragmentManager, "customSegmentedDialog2")}
+                2 -> { CustomSeekbarDialog().show(supportFragmentManager, "customSeekbarDialog")}
             }
         }
 /*
