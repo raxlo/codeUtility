@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.zeroplus.codeutility.databinding.ActivityMainBinding
+import com.zeroplus.codeutility.utility.progressbar.CustomProgressBarDialog
 import com.zeroplus.codeutility.utility.pxdpconverter.CustomPxDpDialog
 import com.zeroplus.codeutility.utility.seekbar.CustomSeekbarDialog
 import com.zeroplus.codeutility.utility.segmented.CustomSegmentedDialog
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 0 -> { CustomPxDpDialog().show(supportFragmentManager, "customPxDpDialog")}
                 1 -> { CustomSegmentedDialog2().show(supportFragmentManager, "customSegmentedDialog2")}
                 2 -> { CustomSeekbarDialog().show(supportFragmentManager, "customSeekbarDialog")}
+                3 -> { CustomProgressBarDialog().show(supportFragmentManager, "customProgressBarDialog")}
             }
         }
 /*

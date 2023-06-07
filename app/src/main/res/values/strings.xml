@@ -25,11 +25,13 @@
         <item>px dp converter</item>
         <item>Segmented Control</item>
         <item>Step Seekbar Switch</item>
+        <item>Progress Bar</item>
     </string-array>
 
     <string-array name="code_description">
         <item>convert pixel/dp to dp/pixel</item>
         <item>Segmented Control</item>
         <item>Step Seekbar Switch</item>
+        <item>Progress Bar</item>
     </string-array>
 </resources>
