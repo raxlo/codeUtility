@@ -38,5 +38,8 @@ class CustomProgressBarDialog : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding?.arcProgress?.setProgress(25f)
+        binding?.circleProgress?.setProgress(50)
+        binding?.dountProgress?.setProgress(75f)
     }
 }
